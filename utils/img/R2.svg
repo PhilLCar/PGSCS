@@ -11,5 +11,5 @@
   <line x1="95" y1="64.5" x2="68" y2="85.5" stroke="black" stroke-width="4pt" stroke-linecap="round"/>
   <line x1="21" y1="120"  x2="50" y2="99"   stroke="black" stroke-width="4pt" stroke-linecap="round"/>
   <line x1="79" y1="120"  x2="50" y2="99"   stroke="black" stroke-width="4pt" stroke-linecap="round"/>
-  <circle cx="50" cy="80" r="12"            stroke="black" stroke-width="4pt" fill="transparent"/>
+  <text x="50" y="92" text-anchor="middle" font-family="Arial" font-size="35">2</text>
 </svg>
