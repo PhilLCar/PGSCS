@@ -1,0 +1,11 @@
+html, body {
+  margin: 0px;
+  width: 100%;
+  font-family: Andale Mono, AndaleMono, monospace;
+  background-color: lightslategrey;
+  color: midnightblue;
+}
+
+h1 {
+  text-align: center;
+}
