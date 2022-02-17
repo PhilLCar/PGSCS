@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 100 150">
+  <rect width="100%" height="100%" fill="white"/>
+  <path d="M5 50 a 45 45 0 0 1 90 0"     stroke="black" stroke-width="4pt" fill="transparent"/>
+  <line x1="5" y1="110"  x2="5"  y2="50" stroke="black" stroke-width="4pt"/>
+  <line x1="95" y1="110" x2="95" y2="50" stroke="black" stroke-width="4pt"/>
+  <line x1="15" y1="105" x2="85" y2="105" stroke="black" stroke-width="4pt"/>
+</svg>
