@@ -46,9 +46,10 @@ public:
   };
 
 public:
-  void setDescription(Current current, Principle principle, Error error, Mount mount, Rating rating);
+  void setDescription(Current current, Principle principle, Error error, Mount mount, Rating rating, int angle);
   void setInput(const char *inputUnits, double inputMax, int inputPrecision);
   void setError(double gaugeError, int errorPrecision);
+  void setZones(double minZone, double maxZone);
   void setGauge(const char *gaugeUnits, double gaugeMin, double gaugeMax, double gaugeOffset, double setValue,
                 double minorIncrement, double mediumIncrement, double majorIncrement, int gaugePrecision);
   
@@ -59,6 +60,10 @@ private:
   std::string getCurrentType();
   std::string getPrinciple();
   std::string getError();
+  std::string getMount();
+  std::string getRating();
+  std::string getInputValue();
+  std::string getGaugeMarkings();
 
 private:
   Current     current;
@@ -77,6 +82,9 @@ private:
   double      mediumIncrement;
   double      majorIncrement;
   double      setValue;
+  double      minZone;
+  double      maxZone;
+  int         angle;
   int         inputPrecision;
   int         errorPrecision;
   int         gaugePrecision;

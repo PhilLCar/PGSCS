@@ -12,10 +12,10 @@
         "core/src/*.cpp",
         "utils/src/*.cpp",
         "-o",
-        "core.out"
+        "bin/core"
       ],
       "options": {
-        "cwd": "${workspaceDirectory}"
+        "cwd": "${workspaceFolder}"
       },
       "problemMatcher": [
         "$gcc"
