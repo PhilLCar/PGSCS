@@ -64,6 +64,7 @@ private:
   std::string getRating();
   std::string getInputValue();
   std::string getGaugeMarkings();
+  std::string getUnits();
 
 private:
   Current     current;

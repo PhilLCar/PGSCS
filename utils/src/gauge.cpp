@@ -7,6 +7,14 @@
 
 static const char* HEADER = "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n\
 <svg version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" width=\"100%\" height=\"100%\" viewBox=\"0 0 400 400\">\n\
+  <defs>\n\
+    <style type=\"text/css\">\n\
+      @font-face {\n\
+        font-family: Plat Nomor;\n\
+        src: url('../fonts/PlatNomor.woff');\n\
+      }\n\
+    </style>\n\
+  </defs>\n\
   <rect width=\"100%\" height=\"100%\" fill=\"white\"/>\n";
 static const char* FOOTER = "</svg>\n";
 
@@ -62,6 +70,8 @@ void Gauge::makeSVG(const char *filename) {
     file << getInputValue();
 
     file << getGaugeMarkings();
+
+    file << getUnits();
 
     file << FOOTER;
     file.close();
@@ -260,7 +270,7 @@ std::string Gauge::getGaugeMarkings() {
       stream << "stroke=\"black\" stroke-width=\"3pt\"/>\n";
 
       stream << "<text x=\"" << x4 << "\" y=\"" << y4 + 10 << "\" ";
-      stream << "font-family=\"Uroob\" font-size=\"30\" text-anchor=\"middle\" alignement-baseline=\"central\">";
+      stream << "font-family=\"Plat Nomor\" font-size=\"30\" text-anchor=\"middle\" alignement-baseline=\"central\">";
       stream << gaugeMin + (double)i * smallestDivision << "</text>\n";
     }
     else if (std::abs((mod / mediumIncrement) - std::round(mod / mediumIncrement)) < EPSILON) {
@@ -280,6 +290,15 @@ std::string Gauge::getGaugeMarkings() {
   }
 
   stream << "<circle cx=\"" << CX << "\" cy=\"" << CY << "\" r=\"30\" fill=\"grey\"/>\n";
+
+  return stream.str();
+}
+
+std::string Gauge::getUnits() {
+  std::ostringstream stream;
+
+  stream << "<text font-family=\"Plat Nomor\" font-weight=\"bold\" font-size=\"50\" x=\"20\" y=\"70\">";
+  stream << gaugeUnits << "</text>\n";
 
   return stream.str();
 }

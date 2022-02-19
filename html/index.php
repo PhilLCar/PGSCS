@@ -8,7 +8,7 @@
  <body>
   <h1>POWER GENERATION SUPERVISORY CONTROL SYSTEM</h1>
   <div class="gauge">
-    <img src="gauges/test.svg" alt="gauge" width="200px" height="200px"/>
+    <object type="image/svg+xml" data="gauges/test.svg" alt="gauge" width="200px" height="200px"></object>
   </div>
  </body>
 </html>
