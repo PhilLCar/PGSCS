@@ -18,7 +18,6 @@ private:
 
 private:
   std::map<std::string, std::string> parameters;
-  std::string groupName;
 };
 
 #endif

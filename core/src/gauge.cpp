@@ -32,8 +32,8 @@ Gauge::Gauge(ConfigurationFile &file, const char *gauge) {
   mount     = (Mount)(int)cg["Mount"];
   rating    = (Rating)(int)cg["Rating"];
 
-  inputUnits = ((std::string)cg["Input-Units"]).c_str();
-  gaugeUnits = ((std::string)cg["Units"]).c_str();
+  inputUnits = (std::string)cg["Input-Units"];
+  gaugeUnits = (std::string)cg["Units"];
 
   inputMax        = cg["Input-Maximum"];
   gaugeError      = cg["Error-Range"];

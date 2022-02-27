@@ -71,8 +71,8 @@ private:
   Error       error;
   Mount       mount;
   Rating      rating;
-  const char *inputUnits;
-  const char *gaugeUnits;
+  std::string inputUnits;
+  std::string gaugeUnits;
   double      inputMax;
   double      gaugeError;
   double      gaugeMin;

@@ -10,63 +10,122 @@
   </defs>
   <rect width="100%" height="100%" fill="white"/>
   <svg x="50" y="1800" viewport="0 0 100 150" transform="scale(0.2 0.2)">
+    <rect width="100%" height="100%" fill="white"/>
+    <line x1="5" y1="65" x2="95" y2="65" stroke="black" stroke-width="4pt"/>
+    <path d="M5 85 Q 22.5 65, 50 85 T 95 85" stroke="black" stroke-width="4pt" fill="transparent"/>
+  </svg>
   <svg x="160" y="1800" viewport="0 0 100 150" transform="scale(0.2 0.2)">
+    <rect width="100%" height="100%" fill="white"/>
+    <path d="M5 50 a 45 45 0 0 1 90 0"      stroke="black" stroke-width="4pt" fill="transparent"/>
+    <line x1="5" y1="110"  x2="5"  y2="50"  stroke="black" stroke-width="4pt"/>
+    <line x1="95" y1="110" x2="95" y2="50"  stroke="black" stroke-width="4pt"/>
+    <line x1="15" y1="105" x2="85" y2="105" stroke="black" stroke-width="4pt"/>
+    <line x1="5"  y1="130" x2="95" y2="130" stroke="black" stroke-width="4pt"/>
+    <line x1="60" y1="120" x2="60" y2="140" stroke="black" stroke-width="4pt"/>
+    <path d="M40 120 v 20 l 20 -10 l -20 -10 Z" fill="black"/>
+  </svg>
   <svg x="270" y="1800" viewport="0 0 100 150" transform="scale(0.2 0.2)">
+    <rect width="100%" height="100%" fill="white"/>
+    <text x="50"  y="92" text-anchor="middle" font-family="Arial" font-size="50">1.5</text>
+    <line x1="5"  y1="100" x2="51" y2="130" stroke="black" stroke-width="4pt"/>
+    <line x1="95" y1="100" x2="49" y2="130" stroke="black" stroke-width="4pt"/>
+  </svg>
   <svg x="380" y="1800" viewport="0 0 100 150" transform="scale(0.2 0.2)">
+    <rect width="100%" height="100%" fill="white"/>
+    <line x1="50" y1="35"  x2="50" y2="115" stroke="black" stroke-width="4pt"/>
+    <line x1="5"  y1="115" x2="95" y2="115" stroke="black" stroke-width="4pt"/>
+  </svg>
   <svg x="490" y="1800" viewport="0 0 100 150" transform="scale(0.2 0.2)">
+    <rect width="100%" height="100%" fill="white"/>
+    <line x1="50" y1="30"   x2="39" y2="64.5" stroke="black" stroke-width="4pt" stroke-linecap="round"/>
+    <line x1="50" y1="30"   x2="61" y2="64.5" stroke="black" stroke-width="4pt" stroke-linecap="round"/>
+    <line x1="5"  y1="64.5" x2="39" y2="64.5" stroke="black" stroke-width="4pt" stroke-linecap="round"/>
+    <line x1="61" y1="64.5" x2="95" y2="64.5" stroke="black" stroke-width="4pt" stroke-linecap="round"/>
+    <line x1="21" y1="120"  x2="32" y2="85.5" stroke="black" stroke-width="4pt" stroke-linecap="round"/>
+    <line x1="79" y1="120"  x2="68" y2="85.5" stroke="black" stroke-width="4pt" stroke-linecap="round"/>
+    <line x1="5"  y1="64.5" x2="32" y2="85.5" stroke="black" stroke-width="4pt" stroke-linecap="round"/>
+    <line x1="95" y1="64.5" x2="68" y2="85.5" stroke="black" stroke-width="4pt" stroke-linecap="round"/>
+    <line x1="21" y1="120"  x2="50" y2="99"   stroke="black" stroke-width="4pt" stroke-linecap="round"/>
+    <line x1="79" y1="120"  x2="50" y2="99"   stroke="black" stroke-width="4pt" stroke-linecap="round"/>
+    <text x="50" y="92" text-anchor="middle" font-family="Arial" font-size="35">2</text>
+  </svg>
   <text x="150" y="385" font-family="Arial" font-size="20">220V</text>
 <line x1="10.000000" y1="330.000000" x2="30.000000" y2="330.000000" stroke="black" stroke-width="1pt"/>
 <line x1="30.000000" y1="330.000000" x2="50.000000" y2="330.000000" stroke="black" stroke-width="3pt"/>
-<text x="80.000000" y="340.000000" font-family="Plat Nomor" font-size="30" text-anchor="middle" alignement-baseline="central">45</text>
-<line x1="10.246708" y1="317.436859" x2="30.231289" y2="318.222055" stroke="black" stroke-width="1pt"/>
-<line x1="10.986453" y1="304.893089" x2="40.893973" y2="307.246862" stroke="black" stroke-width="1pt"/>
-<line x1="12.218094" y1="292.388033" x2="32.079463" y2="294.738781" stroke="black" stroke-width="1pt"/>
+<text x="80.000000" y="340.000000" font-family="Plat Nomor" font-size="30" text-anchor="middle" alignement-baseline="central">57</text>
+<line x1="10.109656" y1="321.623377" x2="30.102803" y2="322.146916" stroke="black" stroke-width="1pt"/>
+<line x1="10.438549" y1="313.252494" x2="40.397435" y2="314.822573" stroke="black" stroke-width="1pt"/>
+<line x1="10.986453" y1="304.893089" x2="30.924800" y2="306.462271" stroke="black" stroke-width="1pt"/>
+<line x1="11.752993" y1="296.550892" x2="41.588650" y2="299.686746" stroke="black" stroke-width="1pt"/>
+<line x1="12.737644" y1="288.231618" x2="32.566542" y2="290.842142" stroke="black" stroke-width="1pt"/>
 <line x1="13.939731" y1="279.940971" x2="43.570381" y2="284.634005" stroke="black" stroke-width="1pt"/>
-<line x1="16.148710" y1="267.571097" x2="35.764416" y2="271.472903" stroke="black" stroke-width="1pt"/>
-<line x1="18.841625" y1="255.297484" x2="48.012723" y2="262.300844" stroke="black" stroke-width="1pt"/>
-<line x1="22.014324" y1="243.139056" x2="41.263429" y2="248.567865" stroke="black" stroke-width="1pt"/>
+<line x1="15.358430" y1="271.684632" x2="35.023528" y2="275.329342" stroke="black" stroke-width="1pt"/>
+<line x1="16.992768" y1="263.468259" x2="46.337196" y2="269.705610" stroke="black" stroke-width="1pt"/>
+<line x1="18.841625" y1="255.297484" x2="38.289024" y2="259.966391" stroke="black" stroke-width="1pt"/>
+<line x1="20.903736" y1="247.177906" x2="40.222252" y2="252.354286" stroke="black" stroke-width="1pt"/>
+<line x1="40.222252" y1="252.354286" x2="59.540769" y2="257.530667" stroke="black" stroke-width="3pt"/>
+<text x="88.518543" y="275.295239" font-family="Plat Nomor" font-size="30" text-anchor="middle" alignement-baseline="central">58</text>
+<line x1="23.177685" y1="239.115090" x2="42.354080" y2="244.795397" stroke="black" stroke-width="1pt"/>
 <line x1="25.661915" y1="231.114562" x2="54.193610" y2="240.385072" stroke="black" stroke-width="1pt"/>
-<line x1="29.778773" y1="219.242542" x2="48.542599" y2="226.164883" stroke="black" stroke-width="1pt"/>
+<line x1="28.354723" y1="223.181805" x2="47.207553" y2="229.857942" stroke="black" stroke-width="1pt"/>
+<line x1="31.254264" y1="215.322256" x2="59.261676" y2="226.073295" stroke="black" stroke-width="1pt"/>
 <line x1="34.358550" y1="207.541302" x2="52.836140" y2="215.194970" stroke="black" stroke-width="1pt"/>
-<line x1="52.836140" y1="215.194970" x2="71.313731" y2="222.848639" stroke="black" stroke-width="3pt"/>
-<text x="99.030117" y="244.329142" font-family="Plat Nomor" font-size="30" text-anchor="middle" alignement-baseline="central">50</text>
-<line x1="39.394184" y1="196.028884" x2="57.557048" y2="204.402079" stroke="black" stroke-width="1pt"/>
+<line x1="37.665454" y1="199.844274" x2="65.071817" y2="212.046374" stroke="black" stroke-width="1pt"/>
+<line x1="41.172709" y1="192.236449" x2="59.224415" y2="200.846671" stroke="black" stroke-width="1pt"/>
 <line x1="44.877912" y1="184.723040" x2="71.608108" y2="198.342755" stroke="black" stroke-width="1pt"/>
-<line x1="50.801278" y1="173.641203" x2="68.251198" y2="183.413628" stroke="black" stroke-width="1pt"/>
-<line x1="57.155147" y1="162.800459" x2="82.734352" y2="178.475416" stroke="black" stroke-width="1pt"/>
-<line x1="63.929724" y1="152.217525" x2="80.559116" y2="163.328930" stroke="black" stroke-width="1pt"/>
+<line x1="48.778524" y1="177.309197" x2="66.354866" y2="186.852372" stroke="black" stroke-width="1pt"/>
+<line x1="52.871871" y1="170.000000" x2="70.192379" y2="180.000000" stroke="black" stroke-width="1pt"/>
+<line x1="70.192379" y1="180.000000" x2="87.512887" y2="190.000000" stroke="black" stroke-width="3pt"/>
+<text x="113.493649" y="215.000000" font-family="Plat Nomor" font-size="30" text-anchor="middle" alignement-baseline="central">59</text>
+<line x1="57.155147" y1="162.800459" x2="74.207951" y2="173.250431" stroke="black" stroke-width="1pt"/>
+<line x1="61.625418" y1="155.715509" x2="86.785535" y2="172.054680" stroke="black" stroke-width="1pt"/>
+<line x1="66.279620" y1="148.750004" x2="82.762143" y2="160.078129" stroke="black" stroke-width="1pt"/>
 <line x1="71.114562" y1="141.908719" x2="95.385072" y2="159.542277" stroke="black" stroke-width="1pt"/>
-<line x1="78.698582" y1="131.889936" x2="94.404921" y2="144.271815" stroke="black" stroke-width="1pt"/>
-<line x1="86.670091" y1="122.176625" x2="109.482270" y2="141.660066" stroke="black" stroke-width="1pt"/>
-<line x1="95.016797" y1="112.783761" x2="109.703247" y2="126.359776" stroke="black" stroke-width="1pt"/>
+<line x1="76.126931" y1="135.196343" x2="91.993998" y2="147.371571" stroke="black" stroke-width="1pt"/>
+<line x1="81.313292" y1="128.617475" x2="104.627671" y2="147.497087" stroke="black" stroke-width="1pt"/>
+<line x1="86.670091" y1="122.176625" x2="101.878210" y2="135.165586" stroke="black" stroke-width="1pt"/>
+<line x1="92.193656" y1="115.878206" x2="114.488001" y2="135.952124" stroke="black" stroke-width="1pt"/>
+<line x1="97.880201" y1="109.726536" x2="112.387689" y2="123.493627" stroke="black" stroke-width="1pt"/>
 <line x1="103.725830" y1="103.725830" x2="117.867966" y2="117.867966" stroke="black" stroke-width="1pt"/>
 <line x1="117.867966" y1="117.867966" x2="132.010101" y2="132.010101" stroke="black" stroke-width="3pt"/>
-<text x="153.223305" y="163.223305" font-family="Plat Nomor" font-size="30" text-anchor="middle" alignement-baseline="central">55</text>
-<line x1="112.783761" y1="95.016797" x2="126.359776" y2="109.703247" stroke="black" stroke-width="1pt"/>
-<line x1="122.176625" y1="86.670091" x2="141.660066" y2="109.482270" stroke="black" stroke-width="1pt"/>
-<line x1="131.889936" y1="78.698582" x2="144.271815" y2="94.404921" stroke="black" stroke-width="1pt"/>
+<text x="153.223305" y="163.223305" font-family="Plat Nomor" font-size="30" text-anchor="middle" alignement-baseline="central">60</text>
+<line x1="109.726536" y1="97.880201" x2="123.493627" y2="112.387689" stroke="black" stroke-width="1pt"/>
+<line x1="115.878206" y1="92.193656" x2="135.952124" y2="114.488001" stroke="black" stroke-width="1pt"/>
+<line x1="122.176625" y1="86.670091" x2="135.165586" y2="101.878210" stroke="black" stroke-width="1pt"/>
+<line x1="128.617475" y1="81.313292" x2="147.497087" y2="104.627671" stroke="black" stroke-width="1pt"/>
+<line x1="135.196343" y1="76.126931" x2="147.371571" y2="91.993998" stroke="black" stroke-width="1pt"/>
 <line x1="141.908719" y1="71.114562" x2="159.542277" y2="95.385072" stroke="black" stroke-width="1pt"/>
-<line x1="152.217525" y1="63.929724" x2="163.328930" y2="80.559116" stroke="black" stroke-width="1pt"/>
-<line x1="162.800459" y1="57.155147" x2="178.475416" y2="82.734352" stroke="black" stroke-width="1pt"/>
-<line x1="173.641203" y1="50.801278" x2="183.413628" y2="68.251198" stroke="black" stroke-width="1pt"/>
+<line x1="148.750004" y1="66.279620" x2="160.078129" y2="82.762143" stroke="black" stroke-width="1pt"/>
+<line x1="155.715509" y1="61.625418" x2="172.054680" y2="86.785535" stroke="black" stroke-width="1pt"/>
+<line x1="162.800459" y1="57.155147" x2="173.250431" y2="74.207951" stroke="black" stroke-width="1pt"/>
+<line x1="170.000000" y1="52.871871" x2="180.000000" y2="70.192379" stroke="black" stroke-width="1pt"/>
+<line x1="180.000000" y1="70.192379" x2="190.000000" y2="87.512887" stroke="black" stroke-width="3pt"/>
+<text x="205.000000" y="123.493649" font-family="Plat Nomor" font-size="30" text-anchor="middle" alignement-baseline="central">61</text>
+<line x1="177.309197" y1="48.778524" x2="186.852372" y2="66.354866" stroke="black" stroke-width="1pt"/>
 <line x1="184.723040" y1="44.877912" x2="198.342755" y2="71.608108" stroke="black" stroke-width="1pt"/>
-<line x1="196.028884" y1="39.394184" x2="204.402079" y2="57.557048" stroke="black" stroke-width="1pt"/>
+<line x1="192.236449" y1="41.172709" x2="200.846671" y2="59.224415" stroke="black" stroke-width="1pt"/>
+<line x1="199.844274" y1="37.665454" x2="212.046374" y2="65.071817" stroke="black" stroke-width="1pt"/>
 <line x1="207.541302" y1="34.358550" x2="215.194970" y2="52.836140" stroke="black" stroke-width="1pt"/>
-<line x1="215.194970" y1="52.836140" x2="222.848639" y2="71.313731" stroke="black" stroke-width="3pt"/>
-<text x="234.329142" y="109.030117" font-family="Plat Nomor" font-size="30" text-anchor="middle" alignement-baseline="central">60</text>
-<line x1="219.242542" y1="29.778773" x2="226.164883" y2="48.542599" stroke="black" stroke-width="1pt"/>
+<line x1="215.322256" y1="31.254264" x2="226.073295" y2="59.261676" stroke="black" stroke-width="1pt"/>
+<line x1="223.181805" y1="28.354723" x2="229.857942" y2="47.207553" stroke="black" stroke-width="1pt"/>
 <line x1="231.114562" y1="25.661915" x2="240.385072" y2="54.193610" stroke="black" stroke-width="1pt"/>
-<line x1="243.139056" y1="22.014324" x2="248.567865" y2="41.263429" stroke="black" stroke-width="1pt"/>
-<line x1="255.297484" y1="18.841625" x2="262.300844" y2="48.012723" stroke="black" stroke-width="1pt"/>
-<line x1="267.571097" y1="16.148710" x2="271.472903" y2="35.764416" stroke="black" stroke-width="1pt"/>
+<line x1="239.115090" y1="23.177685" x2="244.795397" y2="42.354080" stroke="black" stroke-width="1pt"/>
+<line x1="247.177906" y1="20.903736" x2="252.354286" y2="40.222252" stroke="black" stroke-width="1pt"/>
+<line x1="252.354286" y1="40.222252" x2="257.530667" y2="59.540769" stroke="black" stroke-width="3pt"/>
+<text x="265.295239" y="98.518543" font-family="Plat Nomor" font-size="30" text-anchor="middle" alignement-baseline="central">62</text>
+<line x1="255.297484" y1="18.841625" x2="259.966391" y2="38.289024" stroke="black" stroke-width="1pt"/>
+<line x1="263.468259" y1="16.992768" x2="269.705610" y2="46.337196" stroke="black" stroke-width="1pt"/>
+<line x1="271.684632" y1="15.358430" x2="275.329342" y2="35.023528" stroke="black" stroke-width="1pt"/>
 <line x1="279.940971" y1="13.939731" x2="284.634005" y2="43.570381" stroke="black" stroke-width="1pt"/>
-<line x1="292.388033" y1="12.218094" x2="294.738781" y2="32.079463" stroke="black" stroke-width="1pt"/>
-<line x1="304.893089" y1="10.986453" x2="307.246862" y2="40.893973" stroke="black" stroke-width="1pt"/>
-<line x1="317.436859" y1="10.246708" x2="318.222055" y2="30.231289" stroke="black" stroke-width="1pt"/>
+<line x1="288.231618" y1="12.737644" x2="290.842142" y2="32.566542" stroke="black" stroke-width="1pt"/>
+<line x1="296.550892" y1="11.752993" x2="299.686746" y2="41.588650" stroke="black" stroke-width="1pt"/>
+<line x1="304.893089" y1="10.986453" x2="306.462271" y2="30.924800" stroke="black" stroke-width="1pt"/>
+<line x1="313.252494" y1="10.438549" x2="314.822573" y2="40.397435" stroke="black" stroke-width="1pt"/>
+<line x1="321.623377" y1="10.109656" x2="322.146916" y2="30.102803" stroke="black" stroke-width="1pt"/>
 <line x1="330.000000" y1="10.000000" x2="330.000000" y2="30.000000" stroke="black" stroke-width="1pt"/>
 <line x1="330.000000" y1="30.000000" x2="330.000000" y2="50.000000" stroke="black" stroke-width="3pt"/>
-<text x="330.000000" y="90.000000" font-family="Plat Nomor" font-size="30" text-anchor="middle" alignement-baseline="central">65</text>
+<text x="330.000000" y="90.000000" font-family="Plat Nomor" font-size="30" text-anchor="middle" alignement-baseline="central">63</text>
 <circle cx="330.000000" cy="330.000000" r="30" fill="grey"/>
-<path d="M207.541302 34.358550 L 193.631693 18.545855 L 206.195617 13.341707 Z" fill="#FF4000"/>
+<path d="M103.725830 103.725830 L 84.823770 94.439782 L 94.439782 84.823770 Z" fill="#FF4000"/>
 <text font-family="Plat Nomor" font-weight="bold" font-size="50" x="20" y="70">Hz</text>
 </svg>
