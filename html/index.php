@@ -7,8 +7,11 @@
  </head>
  <body>
   <h1>POWER GENERATION SUPERVISORY CONTROL SYSTEM</h1>
-  <div class="gauge">
-    <object type="image/svg+xml" data="gauges/test.svg" alt="gauge" width="200px" height="200px"></object>
+  <div id="freq" class="gauge">
+    <object type="image/svg+xml" data="gauges/frequency.svg" alt="gauge" width="200px" height="200px"></object>
+  </div>
+  <div id="rpm" class="gauge">
+    <object type="image/svg+xml" data="gauges/rpm.svg" alt="gauge" width="200px" height="200px"></object>
   </div>
  </body>
 </html>

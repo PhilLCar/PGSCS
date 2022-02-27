@@ -1,0 +1,3 @@
+[submodule "ConsoleUtils"]
+	path = ConsoleUtils
+	url = git@github.com:PhilLCar/ConsoleUtils.git

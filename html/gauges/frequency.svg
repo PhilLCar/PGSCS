@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 400 400">
+  <defs>
+    <style type="text/css">
+      @font-face {
+        font-family: Plat Nomor;
+        src: url('../fonts/PlatNomor.woff');
+      }
+    </style>
+  </defs>
+  <rect width="100%" height="100%" fill="white"/>
+  <svg x="50" y="1800" viewport="0 0 100 150" transform="scale(0.2 0.2)">
+  <svg x="160" y="1800" viewport="0 0 100 150" transform="scale(0.2 0.2)">
+  <svg x="270" y="1800" viewport="0 0 100 150" transform="scale(0.2 0.2)">
+  <svg x="380" y="1800" viewport="0 0 100 150" transform="scale(0.2 0.2)">
+  <svg x="490" y="1800" viewport="0 0 100 150" transform="scale(0.2 0.2)">
+  <text x="150" y="385" font-family="Arial" font-size="20">220V</text>
+<line x1="10.000000" y1="330.000000" x2="30.000000" y2="330.000000" stroke="black" stroke-width="1pt"/>
+<line x1="30.000000" y1="330.000000" x2="50.000000" y2="330.000000" stroke="black" stroke-width="3pt"/>
+<text x="80.000000" y="340.000000" font-family="Plat Nomor" font-size="30" text-anchor="middle" alignement-baseline="central">45</text>
+<line x1="10.246708" y1="317.436859" x2="30.231289" y2="318.222055" stroke="black" stroke-width="1pt"/>
+<line x1="10.986453" y1="304.893089" x2="40.893973" y2="307.246862" stroke="black" stroke-width="1pt"/>
+<line x1="12.218094" y1="292.388033" x2="32.079463" y2="294.738781" stroke="black" stroke-width="1pt"/>
+<line x1="13.939731" y1="279.940971" x2="43.570381" y2="284.634005" stroke="black" stroke-width="1pt"/>
+<line x1="16.148710" y1="267.571097" x2="35.764416" y2="271.472903" stroke="black" stroke-width="1pt"/>
+<line x1="18.841625" y1="255.297484" x2="48.012723" y2="262.300844" stroke="black" stroke-width="1pt"/>
+<line x1="22.014324" y1="243.139056" x2="41.263429" y2="248.567865" stroke="black" stroke-width="1pt"/>
+<line x1="25.661915" y1="231.114562" x2="54.193610" y2="240.385072" stroke="black" stroke-width="1pt"/>
+<line x1="29.778773" y1="219.242542" x2="48.542599" y2="226.164883" stroke="black" stroke-width="1pt"/>
+<line x1="34.358550" y1="207.541302" x2="52.836140" y2="215.194970" stroke="black" stroke-width="1pt"/>
+<line x1="52.836140" y1="215.194970" x2="71.313731" y2="222.848639" stroke="black" stroke-width="3pt"/>
+<text x="99.030117" y="244.329142" font-family="Plat Nomor" font-size="30" text-anchor="middle" alignement-baseline="central">50</text>
+<line x1="39.394184" y1="196.028884" x2="57.557048" y2="204.402079" stroke="black" stroke-width="1pt"/>
+<line x1="44.877912" y1="184.723040" x2="71.608108" y2="198.342755" stroke="black" stroke-width="1pt"/>
+<line x1="50.801278" y1="173.641203" x2="68.251198" y2="183.413628" stroke="black" stroke-width="1pt"/>
+<line x1="57.155147" y1="162.800459" x2="82.734352" y2="178.475416" stroke="black" stroke-width="1pt"/>
+<line x1="63.929724" y1="152.217525" x2="80.559116" y2="163.328930" stroke="black" stroke-width="1pt"/>
+<line x1="71.114562" y1="141.908719" x2="95.385072" y2="159.542277" stroke="black" stroke-width="1pt"/>
+<line x1="78.698582" y1="131.889936" x2="94.404921" y2="144.271815" stroke="black" stroke-width="1pt"/>
+<line x1="86.670091" y1="122.176625" x2="109.482270" y2="141.660066" stroke="black" stroke-width="1pt"/>
+<line x1="95.016797" y1="112.783761" x2="109.703247" y2="126.359776" stroke="black" stroke-width="1pt"/>
+<line x1="103.725830" y1="103.725830" x2="117.867966" y2="117.867966" stroke="black" stroke-width="1pt"/>
+<line x1="117.867966" y1="117.867966" x2="132.010101" y2="132.010101" stroke="black" stroke-width="3pt"/>
+<text x="153.223305" y="163.223305" font-family="Plat Nomor" font-size="30" text-anchor="middle" alignement-baseline="central">55</text>
+<line x1="112.783761" y1="95.016797" x2="126.359776" y2="109.703247" stroke="black" stroke-width="1pt"/>
+<line x1="122.176625" y1="86.670091" x2="141.660066" y2="109.482270" stroke="black" stroke-width="1pt"/>
+<line x1="131.889936" y1="78.698582" x2="144.271815" y2="94.404921" stroke="black" stroke-width="1pt"/>
+<line x1="141.908719" y1="71.114562" x2="159.542277" y2="95.385072" stroke="black" stroke-width="1pt"/>
+<line x1="152.217525" y1="63.929724" x2="163.328930" y2="80.559116" stroke="black" stroke-width="1pt"/>
+<line x1="162.800459" y1="57.155147" x2="178.475416" y2="82.734352" stroke="black" stroke-width="1pt"/>
+<line x1="173.641203" y1="50.801278" x2="183.413628" y2="68.251198" stroke="black" stroke-width="1pt"/>
+<line x1="184.723040" y1="44.877912" x2="198.342755" y2="71.608108" stroke="black" stroke-width="1pt"/>
+<line x1="196.028884" y1="39.394184" x2="204.402079" y2="57.557048" stroke="black" stroke-width="1pt"/>
+<line x1="207.541302" y1="34.358550" x2="215.194970" y2="52.836140" stroke="black" stroke-width="1pt"/>
+<line x1="215.194970" y1="52.836140" x2="222.848639" y2="71.313731" stroke="black" stroke-width="3pt"/>
+<text x="234.329142" y="109.030117" font-family="Plat Nomor" font-size="30" text-anchor="middle" alignement-baseline="central">60</text>
+<line x1="219.242542" y1="29.778773" x2="226.164883" y2="48.542599" stroke="black" stroke-width="1pt"/>
+<line x1="231.114562" y1="25.661915" x2="240.385072" y2="54.193610" stroke="black" stroke-width="1pt"/>
+<line x1="243.139056" y1="22.014324" x2="248.567865" y2="41.263429" stroke="black" stroke-width="1pt"/>
+<line x1="255.297484" y1="18.841625" x2="262.300844" y2="48.012723" stroke="black" stroke-width="1pt"/>
+<line x1="267.571097" y1="16.148710" x2="271.472903" y2="35.764416" stroke="black" stroke-width="1pt"/>
+<line x1="279.940971" y1="13.939731" x2="284.634005" y2="43.570381" stroke="black" stroke-width="1pt"/>
+<line x1="292.388033" y1="12.218094" x2="294.738781" y2="32.079463" stroke="black" stroke-width="1pt"/>
+<line x1="304.893089" y1="10.986453" x2="307.246862" y2="40.893973" stroke="black" stroke-width="1pt"/>
+<line x1="317.436859" y1="10.246708" x2="318.222055" y2="30.231289" stroke="black" stroke-width="1pt"/>
+<line x1="330.000000" y1="10.000000" x2="330.000000" y2="30.000000" stroke="black" stroke-width="1pt"/>
+<line x1="330.000000" y1="30.000000" x2="330.000000" y2="50.000000" stroke="black" stroke-width="3pt"/>
+<text x="330.000000" y="90.000000" font-family="Plat Nomor" font-size="30" text-anchor="middle" alignement-baseline="central">65</text>
+<circle cx="330.000000" cy="330.000000" r="30" fill="grey"/>
+<path d="M207.541302 34.358550 L 193.631693 18.545855 L 206.195617 13.341707 Z" fill="#FF4000"/>
+<text font-family="Plat Nomor" font-weight="bold" font-size="50" x="20" y="70">Hz</text>
+</svg>

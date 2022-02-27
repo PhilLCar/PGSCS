@@ -1,4 +1,4 @@
-#include <gauge.hpp>
+#include <gauge.h>
 #include <fstream>
 #include <sstream>
 #include <iomanip>
@@ -18,42 +18,39 @@ static const char* HEADER = "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n\
   <rect width=\"100%\" height=\"100%\" fill=\"white\"/>\n";
 static const char* FOOTER = "</svg>\n";
 
-void Gauge::setDescription(Current current, Principle principle, Error error, Mount mount, Rating rating, int angle) {
-  this->current   = current;
-  this->principle = principle;
-  this->error     = error;
-  this->mount     = mount;
-  this->rating    = rating;
-  this->angle     = angle;
+Gauge::Gauge(ConfigurationFile &file, const std::string &gauge) 
+  : Gauge(file, gauge.c_str())
+{
 }
 
-void Gauge::setInput(const char *inputUnits, double inputMax, int inputPrecision) {
-  this->inputUnits     = inputUnits;
-  this->inputMax       = inputMax;
-  this->inputPrecision = inputPrecision;
-}
+Gauge::Gauge(ConfigurationFile &file, const char *gauge) {
+  ConfigurationGroup cg = file[gauge];
 
-void Gauge::setError(double gaugeError, int errorPrecision) {
-  this->gaugeError     = gaugeError;
-  this->errorPrecision = errorPrecision;
-}
+  current   = (Current)(int)cg["Current"];
+  principle = (Principle)(int)cg["Principle"];
+  error     = (Error)(int)cg["Error"];
+  mount     = (Mount)(int)cg["Mount"];
+  rating    = (Rating)(int)cg["Rating"];
 
-void Gauge::setZones(double minZone, double maxZone) {
-  this->minZone = minZone;
-  this->maxZone = maxZone;
-}
+  inputUnits = ((std::string)cg["Input-Units"]).c_str();
+  gaugeUnits = ((std::string)cg["Units"]).c_str();
 
-void Gauge::setGauge(const char *gaugeUnits, double gaugeMin, double gaugeMax, double gaugeOffset, double setValue,
-                     double minorIncrement, double mediumIncrement, double majorIncrement, int gaugePrecision) {
-  this->gaugeUnits      = gaugeUnits;
-  this->gaugeMin        = gaugeMin;
-  this->gaugeMax        = gaugeMax;
-  this->gaugeOffset     = gaugeOffset;
-  this->setValue        = setValue;
-  this->minorIncrement  = minorIncrement;
-  this->mediumIncrement = mediumIncrement;
-  this->majorIncrement  = majorIncrement;
-  this->gaugePrecision  = gaugePrecision;
+  inputMax        = cg["Input-Maximum"];
+  gaugeError      = cg["Error-Range"];
+  gaugeMin        = cg["Minimum"];
+  gaugeMax        = cg["Maximum"];
+  gaugeOffset     = cg["Offset"];
+  minorIncrement  = cg["Minor"];
+  mediumIncrement = cg["Medium"];
+  majorIncrement  = cg["Major"];
+  setValue        = cg["SetPoint"];
+  minZone         = cg["Zone-Minimum"];
+  maxZone         = cg["Zone-Maximum"];
+  
+  angle          = cg["Angle"];
+  inputPrecision = cg["Input-Precision"];
+  errorPrecision = cg["Error-Precision"];
+  gaugePrecision = cg["Precision"];
 }
 
 void Gauge::makeSVG(const char *filename) {
@@ -104,10 +101,10 @@ std::string Gauge::getCurrentType() {
 
   switch (current) {
   case ALTERNATIVE:
-    svg += getSymbolSVG("utils/img/TAC.svg", NULL);
+    svg += getSymbolSVG("res/img/TAC.svg", NULL);
     break;
   case DIRECT:
-    svg += getSymbolSVG("utils/img/TDC.svg", NULL);
+    svg += getSymbolSVG("res/img/TDC.svg", NULL);
     break;
   }
   return svg;
@@ -118,40 +115,40 @@ std::string Gauge::getPrinciple() {
 
   switch (principle) {
   case PMMC:
-    svg += getSymbolSVG("utils/img/SMC.svg", NULL);
+    svg += getSymbolSVG("res/img/SMC.svg", NULL);
     break;
   case PMMC_RADIOMETER:
-    svg += getSymbolSVG("utils/img/SRMC.svg", NULL);
+    svg += getSymbolSVG("res/img/SRMC.svg", NULL);
     break;
   case PMMC_RECTIFIER:
-    svg += getSymbolSVG("utils/img/SMCR.svg", NULL);
+    svg += getSymbolSVG("res/img/SMCR.svg", NULL);
     break;
   case PMMC_RADIOMETER_RECTIFER:
-    svg += getSymbolSVG("utils/img/SRMCR.svg", NULL);
+    svg += getSymbolSVG("res/img/SRMCR.svg", NULL);
     break;
   case MOVING_IRON:
-    svg += getSymbolSVG("utils/img/SMI.svg", NULL);
+    svg += getSymbolSVG("res/img/SMI.svg", NULL);
     break;
   case VIBRATING_REED:
-    svg += getSymbolSVG("utils/img/SVR.svg", NULL);
+    svg += getSymbolSVG("res/img/SVR.svg", NULL);
     break;
   case ELECTRODYNAMIC_IRONLESS:
-    svg += getSymbolSVG("utils/img/SEDI.svg", NULL);
+    svg += getSymbolSVG("res/img/SEDI.svg", NULL);
     break;
   case ELECTRODYNAMIC_RADIOMETER:
-    svg += getSymbolSVG("utils/img/SEDR.svg", NULL);
+    svg += getSymbolSVG("res/img/SEDR.svg", NULL);
     break;
   case FERRODYNAMIC:
-    svg += getSymbolSVG("utils/img/SEDF.svg", NULL);
+    svg += getSymbolSVG("res/img/SEDF.svg", NULL);
     break;
   case FERRODYNAMIC_RADIOMETER:
-    svg += getSymbolSVG("utils/img/SFD.svg", NULL);
+    svg += getSymbolSVG("res/img/SFD.svg", NULL);
     break;
   case ELECTROSTATIC:
-    svg += getSymbolSVG("utils/img/SED.svg", NULL);
+    svg += getSymbolSVG("res/img/SED.svg", NULL);
     break;
   case INDUCTION:
-    svg += getSymbolSVG("utils/img/SI.svg", NULL);
+    svg += getSymbolSVG("res/img/SI.svg", NULL);
     break;
   }
   return svg;
@@ -166,16 +163,16 @@ std::string Gauge::getError() {
   switch (error)
   {
   case VALUE:
-    svg += getSymbolSVG("utils/img/AV.svg", stream.str().c_str());
+    svg += getSymbolSVG("res/img/AV.svg", stream.str().c_str());
     break;
   case SPAN:
-    svg += getSymbolSVG("utils/img/AS.svg", stream.str().c_str());
+    svg += getSymbolSVG("res/img/AS.svg", stream.str().c_str());
     break;
   case VALUE_FISCAL:
-    svg += getSymbolSVG("utils/img/AFV.svg", stream.str().c_str());
+    svg += getSymbolSVG("res/img/AFV.svg", stream.str().c_str());
     break;
   case FULL_SCALE_READING:
-    svg += getSymbolSVG("utils/img/AFSR.svg", stream.str().c_str());
+    svg += getSymbolSVG("res/img/AFSR.svg", stream.str().c_str());
     break;
   }
 
@@ -187,14 +184,14 @@ std::string Gauge::getMount() {
 
   switch (mount) {
   case VERTICAL:
-    svg += getSymbolSVG("utils/img/MV.svg", NULL);
+    svg += getSymbolSVG("res/img/MV.svg", NULL);
     break;
   case HORIZONTAL:
-    svg += getSymbolSVG("utils/img/MH.svg", NULL);
+    svg += getSymbolSVG("res/img/MH.svg", NULL);
     break;
   case ANGLED:
-    std::string val = std::to_string(angle);
-    svg += getSymbolSVG("utils/img/MA.svg", angle ? val.c_str() : "");
+    std::string val = ">" + std::to_string(angle) + "°<";
+    svg += getSymbolSVG("res/img/MA.svg", angle ? val.c_str() : "");
     break;
   }
   return svg;
@@ -205,16 +202,16 @@ std::string Gauge::getRating() {
 
   switch (rating) {
   case EXEMPT:
-    svg += getSymbolSVG("utils/img/RE.svg", NULL);
+    svg += getSymbolSVG("res/img/RE.svg", NULL);
     break;
   case RATED_500V:
-    svg += getSymbolSVG("utils/img/R0.svg", NULL);
+    svg += getSymbolSVG("res/img/R0.svg", NULL);
     break;
   case RATED_2KV:
-    svg += getSymbolSVG("utils/img/R2.svg", NULL);
+    svg += getSymbolSVG("res/img/R2.svg", NULL);
     break;
   case RATED_5KV:
-    svg += getSymbolSVG("utils/img/R5.svg", NULL);
+    svg += getSymbolSVG("res/img/R5.svg", NULL);
     break;
   }
   return svg;
@@ -231,13 +228,15 @@ std::string Gauge::getInputValue() {
 
 std::string Gauge::getGaugeMarkings() {
   const double EPSILON = 0.0000001;
-  const int OUTSIDE_R = 320;
-  const int INSIDE_R1 = 300;
-  const int INSIDE_R2 = 290;
-  const int INSIDE_R3 = 280;
-  const int INSIDE_R4 = 250;
-  const int CX = 330;
-  const int CY = 330;
+  const double ARROW_W = 0.02;
+  const double ARROW_R   = 340;
+  const double OUTSIDE_R = 320;
+  const double INSIDE_R1 = 300;
+  const double INSIDE_R2 = 290;
+  const double INSIDE_R3 = 280;
+  const double INSIDE_R4 = 250;
+  const double CX = 330;
+  const double CY = 330;
   std::ostringstream stream;
   double smallestDivision = majorIncrement * mediumIncrement * minorIncrement;
   double startPoint       = gaugeMin + gaugeOffset;
@@ -245,7 +244,7 @@ std::string Gauge::getGaugeMarkings() {
 
   while (startPoint - smallestDivision > gaugeMin) startPoint -= smallestDivision;
 
-  stream << std::fixed << std::setprecision(gaugePrecision);
+  stream << std::fixed << std::setprecision(6);
 
   for (int i = 0; i <= gaugeSpan; i++) {
     double mod = (gaugeOffset - (gaugeMin + smallestDivision * (double)i)) / majorIncrement;
@@ -271,7 +270,9 @@ std::string Gauge::getGaugeMarkings() {
 
       stream << "<text x=\"" << x4 << "\" y=\"" << y4 + 10 << "\" ";
       stream << "font-family=\"Plat Nomor\" font-size=\"30\" text-anchor=\"middle\" alignement-baseline=\"central\">";
+      stream << std::setprecision(gaugePrecision);
       stream << gaugeMin + (double)i * smallestDivision << "</text>\n";
+      stream << std::setprecision(6);
     }
     else if (std::abs((mod / mediumIncrement) - std::round(mod / mediumIncrement)) < EPSILON) {
       double x2 = CX + c * INSIDE_R2;
@@ -290,6 +291,25 @@ std::string Gauge::getGaugeMarkings() {
   }
 
   stream << "<circle cx=\"" << CX << "\" cy=\"" << CY << "\" r=\"30\" fill=\"grey\"/>\n";
+
+  { // Set Value
+    double t = M_PI_2 * (setValue - gaugeMin) / (gaugeMax - gaugeMin);
+    double s1 = -sin(t);
+    double c1 = -cos(t);
+    double s2 = -sin(t - ARROW_W);
+    double c2 = -cos(t - ARROW_W);
+    double s3 = -sin(t + ARROW_W);
+    double c3 = -cos(t + ARROW_W);
+    double x1 = CX + c1 * OUTSIDE_R;
+    double y1 = CY + s1 * OUTSIDE_R;
+    double x2 = CX + c2 * ARROW_R;
+    double y2 = CY + s2 * ARROW_R;
+    double x3 = CX + c3 * ARROW_R;
+    double y3 = CY + s3 * ARROW_R;
+
+    stream << "<path d=\"M" << x1 << " " << y1 << " L " << x2 << " " << y2 << " L " << x3 << " " << y3 << " Z\"";
+    stream << " fill=\"#FF4000\"/>\n";
+  }
 
   return stream.str();
 }

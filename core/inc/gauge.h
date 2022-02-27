@@ -1,17 +1,19 @@
-#ifndef GAUGE_UTILS
-#define GAUGE_UTILS
+#ifndef GAUGE_CORE
+#define GAUGE_CORE
 
 #include <string>
+
+#include <conf.h>
 
 class Gauge {
 public:
   enum Current {
-    DIRECT,
+    DIRECT = 0,
     ALTERNATIVE
   };
 
   enum Principle {
-    PMMC,
+    PMMC = 0,
     PMMC_RECTIFIER,
     PMMC_RADIOMETER,
     PMMC_RADIOMETER_RECTIFER,
@@ -26,33 +28,30 @@ public:
   };
 
   enum Error {
-    VALUE,
+    VALUE = 0,
     SPAN,
     VALUE_FISCAL,
     FULL_SCALE_READING
   };
 
   enum Mount {
-    VERTICAL,
+    VERTICAL = 0,
     HORIZONTAL,
     ANGLED
   };
 
   enum Rating {
-    EXEMPT,
+    EXEMPT = 0,
     RATED_500V,
     RATED_2KV,
     RATED_5KV
   };
 
 public:
-  void setDescription(Current current, Principle principle, Error error, Mount mount, Rating rating, int angle);
-  void setInput(const char *inputUnits, double inputMax, int inputPrecision);
-  void setError(double gaugeError, int errorPrecision);
-  void setZones(double minZone, double maxZone);
-  void setGauge(const char *gaugeUnits, double gaugeMin, double gaugeMax, double gaugeOffset, double setValue,
-                double minorIncrement, double mediumIncrement, double majorIncrement, int gaugePrecision);
-  
+  Gauge(ConfigurationFile& file, const std::string &gauge);
+  Gauge(ConfigurationFile& file, const char *gauge);
+
+public:
   void makeSVG(const char *filename);
 
 private:
