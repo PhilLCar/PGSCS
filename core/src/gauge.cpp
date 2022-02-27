@@ -246,6 +246,41 @@ std::string Gauge::getGaugeMarkings() {
 
   stream << std::fixed << std::setprecision(6);
 
+  if (minZone > 0.0) {
+    double t = M_PI_2 * maxZone / (gaugeMax - gaugeMin);
+    double s = -sin(t);
+    double c = -cos(t);
+    double x0 = CX - OUTSIDE_R;
+    double y0 = CY;
+    double x1 = CX + c * OUTSIDE_R;
+    double y1 = CY + s * OUTSIDE_R;
+    double x2 = CX + c * INSIDE_R1;
+    double y2 = CX + s * INSIDE_R1;
+    double x3 = CX - INSIDE_R1;
+    double y3 = CY;
+
+    stream << "<path d=\"M " << x0 << " " << y0 << " A " << OUTSIDE_R << " " << OUTSIDE_R << " ";
+    stream << "0 0 0 " << x1 << " " << y1 << " L " << x2 << " " << y2 << " A " << INSIDE_R1 << " " << INSIDE_R1 << " ";
+    stream << "0 0 1 " << x3 << " " << y3 << " Z\" fill=\"red\"/>\n";
+  }
+  if (maxZone > 0.0) {
+    double t = M_PI_2 - M_PI_2 * maxZone / (gaugeMax - gaugeMin);
+    double s = -sin(t);
+    double c = -cos(t);
+    double x0 = CX;
+    double y0 = CY - OUTSIDE_R;
+    double x1 = CX + c * OUTSIDE_R;
+    double y1 = CY + s * OUTSIDE_R;
+    double x2 = CX + c * INSIDE_R1;
+    double y2 = CX + s * INSIDE_R1;
+    double x3 = CX;
+    double y3 = CY - INSIDE_R1;
+
+    stream << "<path d=\"M " << x0 << " " << y0 << " A " << OUTSIDE_R << " " << OUTSIDE_R << " ";
+    stream << "0 0 0 " << x1 << " " << y1 << " L " << x2 << " " << y2 << " A " << INSIDE_R1 << " " << INSIDE_R1 << " ";
+    stream << "0 0 1 " << x3 << " " << y3 << " Z\" fill=\"red\"/>\n";
+  }
+
   for (int i = 0; i <= gaugeSpan; i++) {
     double mod = (gaugeOffset - (gaugeMin + smallestDivision * (double)i)) / majorIncrement;
     double t = M_PI_2 * (double)i / (double)gaugeSpan;

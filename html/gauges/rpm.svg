@@ -49,6 +49,7 @@
     <text x="50" y="92" text-anchor="middle" font-family="Arial" font-size="35">2</text>
   </svg>
   <text x="150" y="385" font-family="Arial" font-size="20">20mA</text>
+<path d="M 330.000000 10.000000 A 320.000000 320.000000 0 0 0 247.177906 20.903736 L 252.354286 40.222252 A 300.000000 300.000000 0 0 1 330.000000 30.000000 Z" fill="red"/>
 <line x1="10.000000" y1="330.000000" x2="30.000000" y2="330.000000" stroke="black" stroke-width="1pt"/>
 <line x1="30.000000" y1="330.000000" x2="50.000000" y2="330.000000" stroke="black" stroke-width="3pt"/>
 <text x="80.000000" y="340.000000" font-family="Plat Nomor" font-size="30" text-anchor="middle" alignement-baseline="central">0</text>
